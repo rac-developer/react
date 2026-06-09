@@ -50,6 +50,20 @@ const RegistrationForm: React.FC = () => {
     setTimeout(() => setIsSuccess(false), 5000);
   };
 
+  // En el caso de ser una api real
+  // const handleSubmit(data:RegistrationSchema) => {
+  //   const result = userFormSchema.SafeParse(data);
+  //   if(result.success) {
+  //     // Enviar a la API
+  //     console.log('Datos válidos:', result.data);
+  //     setIsSuccess(true);
+  //   } else {
+  //     // Mostrar errores
+  //     console.error('Errores de validación:', result.error.issues);
+  //     // Podrías mapear result.error.issues a errores para React Hook Form
+  //   }
+  // }
+
   // 4. Simular datos invalidos para demo 
   const simulateInvalidData = async () => {
     setIsSuccess(false);
